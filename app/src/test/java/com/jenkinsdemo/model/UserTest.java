@@ -23,9 +23,5 @@ public class UserTest {
 
         Assert.assertEquals("foo", u.getName());
     }
-    @Test
-    public void FailTest(){
-        Assert.assertFalse(true);
-    }
 
 }
