@@ -10,18 +10,22 @@ import static org.junit.Assert.*;
  */
 public class UserTest {
 
-    User u;
+
     public UserTest(){
-        u = new User();
+
     }
 
     @Test
     public void UserNameTest() {
 
-
+        User u = new User();
         u.setName("foo");
 
         Assert.assertEquals("foo", u.getName());
+    }
+    @Test
+    public void FailTest(){
+        Assert.assertFalse(true);
     }
 
 }
