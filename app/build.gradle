@@ -11,6 +11,16 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    productFlavors{
+        devel{
+            applicationId "com.jenkinsdemo.devel"
+        }
+
+        prod{
+            applicationId "com.jenkinsdemo"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
